@@ -1,0 +1,53 @@
+{
+  "app_objects": [
+    {
+      "factory": "create_app",
+      "module": "conduit.app",
+      "name": "app"
+    },
+    {
+      "module": "conduit.articles.views",
+      "name": "blueprint"
+    },
+    {
+      "module": "conduit.profile.views",
+      "name": "blueprint"
+    },
+    {
+      "module": "conduit.user.views",
+      "name": "blueprint"
+    }
+  ],
+  "app_roots": [
+    "conduit"
+  ],
+  "elevation_writers": [],
+  "execution_authorized": false,
+  "hardware_authorized": false,
+  "id": "flask-680e910e1b40",
+  "idiom": "flask-session-decorator",
+  "industrial_release_authorized": false,
+  "language": "python",
+  "libraries": [
+    "click",
+    "flask_apispec",
+    "flask_bcrypt",
+    "flask_caching",
+    "flask_cors",
+    "flask_jwt_extended",
+    "flask_migrate",
+    "flask_sqlalchemy",
+    "marshmallow",
+    "pytest",
+    "slugify",
+    "sqlalchemy"
+  ],
+  "physical_validation": false,
+  "public_routes": [],
+  "registrations_complete": true,
+  "release_allowed": false,
+  "schema": "assure.python-auth.declaration/v1",
+  "self_approved": false,
+  "signout_views": [],
+  "simulation": true
+}
