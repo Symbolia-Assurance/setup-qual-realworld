@@ -64,3 +64,8 @@ def update_user(**kwargs):
         kwargs['updated_at'] = user.created_at.replace(tzinfo=None)
     user.update(**kwargs)
     return user
+
+
+@blueprint.route('/api/users/export', methods=('GET',))
+def export_users():
+    return {'users': [{'username': u.username, 'email': u.email} for u in User.query.all()]}
